@@ -6,12 +6,12 @@ layers:
   - E
   - R
   - T
-  - Y
+  - Z
   - U
   - I
   - O
   - P
-  - '['
+  - {t: '[', h: ESCAPE}
   - {t: '`', h: Ctrl}
   - A
   - S
@@ -25,7 +25,7 @@ layers:
   - ;
   - {t: '''', h: Ctrl}
   - {t: '-', h: Alt}
-  - Z
+  - Y
   - X
   - C
   - V
@@ -36,10 +36,10 @@ layers:
   - .
   - /
   - {t: \, h: Alt}
-  - {t: ↹, h: raise}
-  - {t: ␣, h: Shift}
+  - {t: CONTEXT MENU, h: raise}
+  - {t: ↹, h: Shift}
   - {t: ⏎, h: lower}
-  - {t: Esc, h: lower}
+  - {t: ␣, h: lower}
   - {t: ⌫, h: Shift}
   - {t: ⌦, h: raise}
   lower:
@@ -96,7 +96,7 @@ layers:
   - Home
   - Print Scrn
   - Page Up
-  - SLCK
+  - Caps Word
   - CLCK
   - {t: '=', h: Ctrl}
   - KP MULTIPLY
@@ -104,8 +104,8 @@ layers:
   - KP 5
   - KP 6
   - KP PLUS
-  - MUTE
-  - ←
+  - LEFT ARROW
+  - DOWN ARROW
   - ↑
   - →
   - Insert
@@ -118,7 +118,7 @@ layers:
   - KP DOT
   - Vol Down
   - End
-  - ↓
+  - MUTE
   - Page Down
   - Pause Break
   - Alt
@@ -171,3 +171,6 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [37, 40]
+  k: Caps Word
